@@ -6,6 +6,7 @@ branches:
   - /.*appveyor.*/
 
 environment:
+
   STACK_ROOT: C:\sr
   STACK_VERSION: 1.9.3
 
