@@ -4,7 +4,8 @@ branches:
   only:
   - master
   - /.*appveyor.*/
-
+  - /\d*\.\d*\.\d*/
+  
 environment:
 
   STACK_ROOT: C:\sr
@@ -61,4 +62,5 @@ deploy:
       secure: Gs/tiz6Jtg/Zjd4zGHDhuSv4Y9a+zJ574LWwzOe2bvZNGX/M8XupkxdGmBpDlnOf
     artifact: dhall, dhall-json, dhall-text, dhall-bash
     on:
+      STACK_YAML: stack.yaml
       APPVEYOR_REPO_TAG: true
